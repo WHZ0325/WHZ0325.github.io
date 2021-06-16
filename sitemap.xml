@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://whz0325.github.io/cf-981d/</loc>
+    
+    <lastmod>2021-06-16</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://whz0325.github.io/bzoj-3998/</loc>
     
     <lastmod>2021-06-16</lastmod>
@@ -114,13 +121,6 @@
   </url>
   
   <url>
-    <loc>https://whz0325.github.io/cf-981d/</loc>
-    
-    <lastmod>2019-03-23</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://whz0325.github.io/404/index.html</loc>
     
     <lastmod>2019-03-05</lastmod>
@@ -214,7 +214,14 @@
   </url>
   
   <url>
-    <loc>https://whz0325.github.io/tags/STL/</loc>
+    <loc>https://whz0325.github.io/tags/%E6%95%B0%E8%AE%BA/</loc>
+    <lastmod>2021-06-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://whz0325.github.io/tags/%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/</loc>
     <lastmod>2021-06-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -242,14 +249,7 @@
   </url>
   
   <url>
-    <loc>https://whz0325.github.io/tags/%E6%95%B0%E8%AE%BA/</loc>
-    <lastmod>2021-06-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://whz0325.github.io/tags/%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/</loc>
+    <loc>https://whz0325.github.io/tags/STL/</loc>
     <lastmod>2021-06-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
