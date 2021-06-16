@@ -187,7 +187,7 @@
 <p>做法一：莫比乌斯反演</p>
 <p>将式子转化一下变成 $2\sum_{i=1}^n\sum_{j=1}^mgcd(i,j)-n\times m$，考虑用莫比乌斯反演推出 $\sum_{i=1}^n\sum_{j=1}^mgcd(i,j)$ 的值。</p>
 <p>枚举 $gcd(i,j)$ 的值得到 $\sum_{g=1}^{min{n,m}}g\sum_{i=1}^n\sum_{j=1}^m[gcd(i,j)=g]=\sum_{g=1}^{min{n,m}}g\sum_{i=1}^\frac{n}{g}\sum_{j=1}^\frac{m}{g}[gcd(i,j)=1]$。</p>
-<p>莫比乌斯反演得原式等于 $\sum_{g=1}^{min{n,m}}g\sum_{i=1}^\frac{n}{g}\sum_{j=1}^\frac{m}{g}\sum_{d|gcd(i,j)}\mu(d)=\sum_{g=1}^{min{n,m}}g\sum_{i=1}^\frac{n}{g}\sum_{j=1}^\frac{m}{g}\sum_{d|i\and d|j}\mu(d)$。</p>
+<p>莫比乌斯反演得原式等于 $\sum_{g=1}^{min{n,m}}g\sum_{i=1}^\frac{n}{g}\sum_{j=1}^\frac{m}{g}\sum_{d|gcd(i,j)}\mu(d)=\sum_{g=1}^{min{n,m}}g\sum_{i=1}^\frac{n}{g}\sum_{j=1}^\frac{m}{g}\sum_{d|i且 d|j}\mu(d)$。</p>
 <p>枚举 $d$ 的值得到 $\sum_{g=1}^{min{n,m}}g\sum_{d=1}^{\lfloor\frac{min{n,m}}{g}\rfloor}\mu(d)\lfloor\frac{n}{gd}\rfloor\lfloor\frac{n}{gd}\rfloor$，然后我到这里就不会推了？？？</p>
 <p>其实这里就可以直接算了，根据调和级数，时间复杂度大约是 $O(n\ln{n})$。注意初始化 $mu[1]=1$。</p>
 <p>做法二：容斥原理</p>
@@ -485,6 +485,21 @@
 </script>
 
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 
 </html>
